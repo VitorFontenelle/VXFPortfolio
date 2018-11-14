@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Views.Hermes">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Frame CornerRadius="20">
+                    <StackLayout BackgroundColor="White" Padding ="10,10,10,10">
+                        <ScrollView Orientation="Horizontal" HorizontalOptions="Start">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Start"
+                                Aspect="AspectFill"
+                                Source="Hermes52.jpg" 
+                                HeightRequest="250"/>
+                        </ScrollView>
+                        <Label FontSize="22">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Hermes" FontAttributes="Bold" FontSize="22" />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.Text>
+                                Project Name: "Hermes";
+Tecnologies: C#, Javascript, .NET, Bootstrap;
+Company: Arco Educação;
+Hermes was a simple web project I have made that has as main goal to make easier the life of the Financial Sector of the company Arco Educação.
+Integrating itself with the X-Manager software, Hermes acts as a carrier, downloading all files related to the given Issue via SFTP, so that employees do not need to download the files one by one, being able to analyze them all at the same time.
+Hermes also stored all the downloaded files in a backup repository in a structure much easier than X-Manager, in a way that the employees could search quicker for them, and made it possible to close the Issue by putting personalized comments.
+Hermes made a routine that was previously performed by three people a lot faster and practical, being now performed by only one person.
+This is not one of my best web projects, but I am not allowed to share most of them.
+                            </Label.Text>
+
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

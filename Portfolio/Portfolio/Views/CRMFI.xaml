@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Views.CRMFI">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Frame CornerRadius="20">
+                    <StackLayout BackgroundColor="White" Padding ="10,10,10,10">
+                        <ScrollView Orientation="Horizontal">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Start"
+                                Aspect="AspectFill"
+                                Source="CRMFI1.png" 
+                                HeightRequest="250"/>
+                        </ScrollView>
+                        <Label FontSize="22">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="CRM Field Importer" FontAttributes="Bold" FontSize="22" />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.Text>
+                                Project Name: CRM Field Importer;
+Tecnologies: C#, OleDB, XrmToolBox;
+Company: Pentalab;
+The CRM Field Importer project was created for the Pentalab company. It's a console application that connects with various versions of Dynamics CRM and generate a series of Fields and Business Rules from an Excel file.
+The Project Analyst used to generate an Excel Document for each new project and the employees created field by field inside CRM, then manually created the Business Rules. This application reduced about ten (10) hours of work from each project.
+                            </Label.Text>
+
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

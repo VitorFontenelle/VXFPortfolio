@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Views.CMC">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Frame CornerRadius="20">
+                    <StackLayout BackgroundColor="White" Padding ="10,10,10,10">
+                        <ScrollView Orientation="Horizontal">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Start"
+                                Aspect="AspectFill"
+                                Source="CMC.png" 
+                                HeightRequest="250"/>
+                        </ScrollView>
+                        <Label FontSize="22">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Comelit Mail Center" FontAttributes="Bold" FontSize="22" />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.Text>
+                                Project Name: Comelit Mail Center (CMC);
+Tecnologies: C# Desktop Application and OleDB;
+Company: Comelit (Italian client from Pentalab);
+CMC is a desktop project designed to control contracts sent to Comelit customers.
+The company receives a monthly list of clients and emails for potential contract closures, they put those files in an Excel spreadsheet and began writing the contracts in a Word document.
+To make easier the creation of contracts, was created a Macro for their Excel file that read all the clients in it with some parameters and automatically generated a Word document with a contract template, already containing the information of the client to be sent.
+Even with this Macro, the employees felt difficulty to control the emails that were sent and difficulty to associate the contract with each client, with this was created the Comelit Mail Center. The software activates the Excel Macro generating Word documents, allowing to read and edit those documents, transforming it to PDF and sending the file by e-mail with a message configurable by the Menu. After sending it is possible to read the contract associated with each client and verify if the email has already been sent or not.
+The color design was entirely requested by Comelit, I am not responsible for this.
+                            </Label.Text>
+
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

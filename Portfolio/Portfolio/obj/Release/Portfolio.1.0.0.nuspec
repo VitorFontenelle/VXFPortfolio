@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Portfolio</id>
+    <version>1.0.0</version>
+    <authors>Portfolio</authors>
+    <owners>Portfolio</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Xamarin.Forms" version="3.1.0.697729" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\vitfo\source\repos\Portfolio\Portfolio\Portfolio\bin\Release\netstandard2.0\Portfolio.dll" target="lib\netstandard2.0\Portfolio.dll" />
+  </files>
+</package>

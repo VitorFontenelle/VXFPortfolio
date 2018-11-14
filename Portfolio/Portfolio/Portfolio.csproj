@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>VXFPortfolio.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\CMC.xaml.cs">
+      <DependentUpon>CMC.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Curriculum.xaml.cs">
+      <DependentUpon>Curriculum.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Desktop.xaml.cs">
+      <DependentUpon>Desktop.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Mobile.xaml.cs">
+      <DependentUpon>Mobile.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Web.xaml.cs">
+      <DependentUpon>Web.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\CMC.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CRMFI.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Hermes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VemGente.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
